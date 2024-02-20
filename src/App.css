@@ -1,0 +1,284 @@
+/* BARRA DE NAVEGACIÓN */
+.main-nav {
+  background: #17a2b8;
+  padding: 1.25rem 6%;
+  box-shadow: 0 5px 12px 5px grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* HEADER */
+.home-header {
+  margin-top: 63px;
+  width: 100%;
+  height: 45vh;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  opacity: 20;
+}
+
+.home-header h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.home-header p {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  width: 80%;
+  text-align: center;
+}
+
+/* MAIN */
+main {
+  margin: auto;
+  padding: 3rem 0 4rem 0;
+  width: 80%;
+  min-height: calc(100vh - 59px);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* TARJETAS */
+.card {
+  width: 25%;
+  padding: 1rem;
+}
+
+.card .content {
+  border: 1px solid #cccccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card .content img {
+  width: 100%;
+}
+
+.card .content h4 {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  width: 85%;
+  margin: auto;
+  border-bottom: 2px solid #cccccc;
+}
+
+.card .content ul {
+  padding: 1rem;
+}
+
+.card .ingredients {
+  padding: 0 7.5%;
+  margin-top: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.card .ingredients li {
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
+}
+
+.card .price {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.card .btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* VISTA VER MÁS */
+.pizza-view {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  margin-top: 63px;
+}
+
+.pizza-view .image {
+  width: 40%;
+}
+
+.pizza-view .image img {
+  width: 100%;
+}
+
+.pizza-view .content {
+  width: 60%;
+  padding: 1rem;
+}
+
+.pizza-view .content h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px, solid #cccccc;
+}
+
+.pizza-view .desc {
+  margin-bottom: 2rem;
+}
+
+.pizza-view ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  text-transform: capitalize;
+}
+
+.pizza-view .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* CARRITO DE COMPRAS */
+.cart {
+  margin-top: 63px;
+}
+
+.cart h2 {
+  margin-bottom: 2rem;
+}
+
+.cart li {
+  border-bottom: 2px solid #ccd;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart li img {
+  width: 85px;
+  margin-right: 1rem;
+}
+
+.cart li .product,
+.cart li .price,
+.cart li .btns {
+  display: flex;
+  align-items: center;
+}
+
+.cart li .price {
+  font-size: 18px;
+}
+
+.cart li .product h4 {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+.cart li .btn {
+  width: 30px;
+}
+
+.cart li p {
+  width: 50px;
+  text-align: center;
+}
+
+.cart .total {
+  padding-left: 1rem;
+}
+
+.cart .total h3 {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.cart .empty-cart {
+  font-size: 1.125rem;
+}
+
+.not-found,
+.pagos {
+  text-align: center;
+  padding-top: 9rem;
+}
+
+.not-found h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  margin-bottom: 3rem;
+}
+
+.pagos i {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 968px) {
+  .pizza-view .image {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .pizza-view .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 592px) {
+  .home-header {
+    height: 50vh;
+  }
+
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-header p {
+    font-size: 1.5rem;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
